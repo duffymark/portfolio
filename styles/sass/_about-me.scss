@@ -1,0 +1,89 @@
+
+
+.myName{
+    display: inline-block;
+    border-bottom: #f5df4e solid 2px;
+    font-weight: bold;
+}
+
+.aboutMeSec{
+    margin: 2%;
+}
+
+.aboutMeHL{
+    font-weight: 100;
+}
+
+.getToKnow{
+    font-weight: bold;
+}
+
+.hiIAm{
+    margin: 0;
+    font-weight: 100;
+    align-items: initial;
+}
+
+.aboutMePara{
+    margin: 0;
+    align-items: center;
+    // width: 65%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.aboutMePara p{
+    text-align: initial;
+    width: 50%;
+}
+
+/* CONTACT LINKS */
+
+.contactLinks{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+}
+
+.contactLinks a{
+    align-items: center;
+    padding: 2% 5% 5% 0;
+}
+
+/* SKILLS SECTION */
+
+.skillSec{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.highlight{
+    text-align: center;
+    padding: 2px 10px;
+    font-weight: 100;
+    background-color: #f5df4e;
+}
+
+/* SKILLS GALLERY */
+
+.skillContainer{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+}
+
+.skillsGallery{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+
+

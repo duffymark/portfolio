@@ -1,0 +1,45 @@
+// HEADER SECTION
+.navBar{
+    
+}
+.leftLinks{
+    float: left;
+    text-align: center;
+}
+.rightLinks{
+    float: right;
+    text-align: center;
+}
+
+
+// HERO SECTION
+
+.myImage{
+    width: 300px;
+    border-radius: 500px;
+    border: 10px black solid;
+}
+
+.heroSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.introInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.scrollDown{
+    
+}

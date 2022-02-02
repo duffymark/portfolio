@@ -1,0 +1,32 @@
+.resumeSec{
+    margin-top:8%;
+}
+
+.education,
+.experience{
+    width: 45%;
+    border-left: 2px solid #f5df4e
+}
+
+.resume{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.greyUL{
+    border-bottom: 2px solid hsl(213, 9, 23, .3);
+    color: rgb(110, 115, 121);
+    margin: 1%;  
+    width: 90%;
+}
+
+.position{
+    font-weight: bold;
+    margin: 1%;
+}
+
+.location{
+    margin: 1%;
+}

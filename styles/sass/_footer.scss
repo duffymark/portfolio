@@ -1,0 +1,47 @@
+.footerBG{
+    background-color: #f5df4e;
+    width: 100%;
+    background-size: cover; 
+}
+
+.footerBG i{
+    color: #353a40;;
+}
+
+.getInTouch{
+    padding: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.contactIcons{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2%;
+}
+
+.footerLinks{
+    background-color: #353a40;
+    width: 100%;
+    padding: 2%;
+}
+
+.returnTop{
+    float: right;
+}
+
+.footerLinks p{
+    color: whitesmoke
+}
+
+footer a{
+    transition: color 0.3s ease-in-out;
+    color: whitesmoke;
+    text-decoration: none;
+    &:focus,
+    &:hover{
+        color: #f5df4e;
+    }
+}

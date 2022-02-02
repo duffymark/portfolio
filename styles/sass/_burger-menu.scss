@@ -1,0 +1,44 @@
+.mobileBurger{
+    visibility: hidden;
+}
+
+#buttonMenu li a{
+    visibility: visible;
+    display: block;
+    background-color: transparent;
+}
+
+.hiddenMenu{
+    padding-top: 15%;
+    padding-bottom:5%;
+    position: absolute;
+    background-color: #f6f6f6;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    z-index:2;
+}
+
+
+.mobileMenu{
+    display: block;
+    visibility: hidden;
+
+}
+
+.buttonTransparent{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 3rem;
+    display: none;
+}
+
+.hiddenLogo{
+    visibility: hidden;
+    display: block;
+    display: none;
+}

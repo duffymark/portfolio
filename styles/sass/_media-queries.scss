@@ -1,0 +1,19 @@
+@media (max-width: 750px) {
+    .mobileBurger{
+        visibility: visible;
+    }
+    .mobileMenu{
+    display: block;
+    visibility: visible;
+}
+    .navBar{
+        visibility: hidden;
+    }
+    .hiddenLogo{
+    visibility: visible;
+}
+    .buttonTransparent{
+    display: block;
+    padding: 5%;
+}
+}

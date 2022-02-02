@@ -1,0 +1,55 @@
+// NAV BAR //
+
+.navBar{
+    
+    width: 100%;
+    overflow: hidden;
+}
+
+.navBar a{
+    float:left;
+    display: block;
+    text-align: center;
+    text-decoration: none;  
+    padding: 10px;  
+}
+
+.rightLinks{
+    float: right;
+}
+
+// BACKGROUND //
+
+header{
+    background-color: #f5df4e;
+    height: 100vh;
+    background-size: cover;
+}
+
+// SCROLL DOWN BUTTON //
+
+.scrollDown{
+    text-align: center;
+}
+
+// MAIN TEXT AND PHOTO //@at-root
+
+.flexContainer{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    width: auto;
+    
+}
+
+.centered{
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
