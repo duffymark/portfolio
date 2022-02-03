@@ -35,7 +35,7 @@
                     <li><a class="contactNavInfo">duffy_mark@hotmail.com</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav> <!-- end of MOBILE NAV -->
 
 <!-- Regular NavBar -->
 
@@ -46,31 +46,33 @@
                     <a class="contactNavInfo">(123)456-7890</a>
                     <a class="contactNavInfo"><i class="fas fa-envelope"></i></a>
                     <a class="contactNavInfo">duffy_mark@hotmail.com</a>
-            </div>
-        </nav>
-        
-
-        <div class='flexContainer'>
-            <div class="row">
-            <div class='centered'>
-                <h1>Hi, I'm a <span>Front-End Web Developer</span></h1>
-
-                <a href="#projects"><button aria-label="Click to see projects section" class='projectsBtn'>View My Projects</button></a>
-            </div>
-            <div class='centered'>
-                <img class='myImage'
-                src="https://thumbs.dreamstime.com/z/man-standing-silhouette-people-flat-cartoon-icon-78219615.jpg"
-                alt="A Photo of Me">
                 </div>
-            </div>
-        </div>
-        <div class='scrollDown'>
-            <a href='#aboutMe'><i class="downArrow fas fa-chevron-down"></i></a>
-        </div>
-    </div>
-</header>
+        </nav> <!-- end of REG NAVBAR -->
 
-    <!-- HERO SECTION -->
+<!-- HERO SECTION -->
+    
+            <div class="titleImg">
+                <div class='center'>
+                    <h1>Hi, I'm a <span>Front-End Web Developer</span></h1>
+
+                    <a href="#projects"><button aria-label="Click to see projects section" class='projectsBtn'>View My Projects</button></a>
+                </div>
+                <div class='center'>
+                    <img class='selfImage'
+                    src="https://thumbs.dreamstime.com/z/man-standing-silhouette-people-flat-cartoon-icon-78219615.jpg"
+                    alt="A Photo of Me">
+                </div>
+
+            </div>
+            <div class='scrollDown'>
+                <a href='#aboutMe'><i class="downArrow fas fa-chevron-down"></i></a>
+            </div>
+              
+        </div> <!--  end of WRAPPER -->
+    </header> <!--  end of HEADER -->
+    
+
+    
 
     
 
@@ -103,7 +105,7 @@
         <div class='wrapper'>
             <div class='skillsSec'>
                 <h3 class='skillsHeadline'><mark class='highlight'>I've got skills, they're multiplying!</mark></h3>
-                <h2>What I Will Bring to Your Next Project?</h2>
+                <h2 class='skillsBring'>What I Will Bring to Your Next Project?</h2>
             </div>
 
             <!-- SKILLS GALLERY -->
@@ -144,23 +146,15 @@
     </section>
 
 <!--Recent Projects Gallery-->
-    <section>
-        <!-- <div class="wrapper">
 
-            <div class='projectsDisplay' id='projects'>
-                <a href="https://berks-berks-berks.netlify.app/" target="blank"></a><img class='carousel' src="./styles/assets/page-turners.png">
-                <a href="https://reelgoodfilms.netlify.app/" target="blank"></a><img class='carousel' src="./styles/assets/reel-good-films.png">
-                <a href="https://juno-sweater-weather.netlify.app/" target="blank"><img class='carousel' src="./styles/assets/sweater-weather.png"></a>
-            </div>
-        </div> -->
 
         <section>
-            <div class="carousel-container flexc">
+            <div class="carouselContainer flexCarousel">
                 <div class="left-arrow" onclick="moveLeft()">
                     <i class="fas fa-chevron-left"></i>
                 </div>
         
-                <div class="image-container flexc">
+                <div class="imageContainer flexCarousel">
                     
                     <a href="https://berks-berks-berks.netlify.app/" target="blank">
                     <img class='carousel'
@@ -185,9 +179,6 @@
             <script src="https://use.fontawesome.com/2f5189959d.js"></script>
         </section>
 
-
-
-    </section>
 
     <section class='hireMeBG'>
         <div class='wrapper'>

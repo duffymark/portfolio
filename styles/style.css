@@ -243,17 +243,28 @@ body {
   padding: 0;
 }
 
-.image-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.flexc {
+header {
+  background-color: #f5df4e;
+  height: 100vh;
+  background-size: cover;
+}
+
+h1 {
+  line-height: 4.25rem;
+}
+
+.myImage {
+  width: 300px;
+  border-radius: 500px;
+  border: 10px black solid;
+}
+
+.heroSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,38 +276,86 @@ body {
           align-items: center;
 }
 
-.carousel-container .image-container {
+.heroIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.introInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flexCarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carouselContainer .imageContainer {
   margin: 5px;
   padding: 5px;
 }
 
-.carousel-container .image-container img {
+.carouselContainer .imageContainer img {
   width: 500px;
   height: 300px;
   margin: 5px;
   padding: 5px;
 }
 
-.carousel-container .image-container div ul {
+.carouselContainer .imageContainer div ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.carousel-container .image-container div ul li {
+.carouselContainer .imageContainer div ul li {
   display: inline;
   margin: 3px;
   color: grey;
   cursor: pointer;
 }
 
-.carousel-container .left-arrow,
-.carousel-container .right-arrow {
+.carouselContainer .left-arrow,
+.carouselContainer .right-arrow {
   cursor: pointer;
 }
 
-.carousel-container .left-arrow h1,
-.carousel-container .right-arrow h1 {
+.carouselContainer .left-arrow h1,
+.carouselContainer .right-arrow h1 {
   border: 2px solid black;
   border-radius: 50%;
   height: 30px;
@@ -306,7 +365,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .carousel-container .image-container img {
+  .carouselContainer .imageContainer img {
     width: 200px;
     height: 150px;
   }
@@ -358,17 +417,13 @@ h1, h2, h3, h4, p {
   padding: 10px;
 }
 
+.leftLinks {
+  float: left;
+  text-align: center;
+}
+
 .rightLinks {
   float: right;
-}
-
-header {
-  background-color: #f5df4e;
-  height: 100vh;
-  background-size: cover;
-}
-
-.scrollDown {
   text-align: center;
 }
 
@@ -387,33 +442,22 @@ header {
           justify-content: center;
 }
 
-.row {
-  width: auto;
-}
-
-.centered {
-  padding: 5px;
+.center {
+  padding: 5% 5% 10% 5%;
   margin: 0;
   text-align: center;
 }
 
-.leftLinks {
-  float: left;
-  text-align: center;
-}
-
-.rightLinks {
-  float: right;
-  text-align: center;
-}
-
-.myImage {
+.selfImage {
   width: 300px;
   border-radius: 500px;
   border: 10px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.heroSection {
+.titleImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,30 +469,21 @@ header {
           align-items: center;
 }
 
-.heroIntro {
+.scrollDown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.introInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: auto;
+  overflow: auto;
+  text-align: center;
+  position: relative;
 }
 
 .aboutMeSec {
@@ -568,7 +603,7 @@ main {
 }
 
 .aboutMeSec {
-  margin: 2%;
+  padding-top: 8%;
 }
 
 .aboutMeHL {
@@ -577,6 +612,7 @@ main {
 
 .getToKnow {
   font-weight: bold;
+  padding: 2%;
 }
 
 .hiIAm {
@@ -585,6 +621,7 @@ main {
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
+  padding-bottom: 1%;
 }
 
 .aboutMePara {
@@ -626,13 +663,20 @@ main {
 }
 
 .contactLinks a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2% 5% 5% 0;
+  text-align: center;
+  padding: 2%;
 }
 
 /* SKILLS SECTION */
+.skillsHeadline {
+  padding-top: 8%;
+}
+
+.skillsBring {
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
 .skillSec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,6 +719,15 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #353a40;
+}
+
+.skillsGallery li {
+  padding: 2%;
+}
+
+.skillsGallery i {
+  font-size: 2rem;
 }
 
 .footerBG {

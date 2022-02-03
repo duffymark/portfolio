@@ -1,14 +1,15 @@
 // HEADER SECTION
-.navBar{
-    
+
+
+header{
+    background-color: #f5df4e;
+    // 
+    height: 100vh;
+    background-size: cover;
 }
-.leftLinks{
-    float: left;
-    text-align: center;
-}
-.rightLinks{
-    float: right;
-    text-align: center;
+
+h1{
+    line-height: 4.25rem;
 }
 
 
@@ -40,6 +41,3 @@
     
 }
 
-.scrollDown{
-    
-}

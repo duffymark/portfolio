@@ -11,37 +11,10 @@
   }
 }
 
-//CAROUSEL
-
-// const images = document.querySelectorAll('.carousel'); 
-
-// let i = 0;
-
-
-
-// setInterval(function(){ 
-
-//   images.forEach( (img, i) => {
-//     img.style.display = 'none';
-//   })
-
-//   if( i == images.length) {
-//     i = 0; 
-//   }
-  
-//   images[i].style.display = 'block';
-  
-//   i++;
-
-// }, 4000 );
-
-
-//CAROUSEL 2
-
-
+//CAROUSEL 
 
 //get all the images and li from HTML
-let carouselImages = document.getElementsByTagName("img");
+let carouselImages = document.getElementsByClassName("carousel");
 let dotNode = document.getElementsByTagName("li");
 let currentIndex = 1;
 

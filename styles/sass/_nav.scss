@@ -12,25 +12,22 @@
     text-align: center;
     text-decoration: none;  
     padding: 10px;  
+    
 }
 
+.leftLinks{
+    float: left;
+    text-align: center;
+}
 .rightLinks{
     float: right;
+    text-align: center;
 }
 
 // BACKGROUND //
 
-header{
-    background-color: #f5df4e;
-    height: 100vh;
-    background-size: cover;
-}
-
 // SCROLL DOWN BUTTON //
 
-.scrollDown{
-    text-align: center;
-}
 
 // MAIN TEXT AND PHOTO //@at-root
 
@@ -43,13 +40,35 @@ header{
     justify-content: center;
 }
 
-.row{
-    width: auto;
-    
-}
-
-.centered{
-    padding: 5px;
+.center{
+    padding: 5% 5% 10% 5%;
     margin: 0;
     text-align: center;
 }
+
+.selfImage{
+width: 300px;
+border-radius: 500px;
+border: 10px black solid;
+display: flex;
+}
+
+.titleImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 8%;
+}
+
+.scrollDown{
+    
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: auto;
+    overflow: auto;
+    text-align: center;
+    position: relative;
+}
+
+
