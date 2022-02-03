@@ -1,7 +1,7 @@
 // NAV BAR //
 
 .navBar{
-    
+    padding: 0 3% 0px 3%;
     width: 100%;
     overflow: hidden;
 }
@@ -24,10 +24,19 @@
     text-align: center;
 }
 
+.rightLinks a{
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.rightLinks a:hover{
+    
+    color: white;
+    border: 1px solid white;
+}
+
 // BACKGROUND //
-
-// SCROLL DOWN BUTTON //
-
 
 // MAIN TEXT AND PHOTO //@at-root
 

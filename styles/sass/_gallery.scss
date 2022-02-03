@@ -1,6 +1,12 @@
 
 
 // CAROUSEL 2
+
+.imageGallery{
+  padding-bottom: 8%;
+  background: #233554;
+}
+
 .imageContainer{
   display: flex;
   flex-direction: column;
@@ -16,26 +22,39 @@
   padding: 5px;
 }
 .carouselContainer .imageContainer img {
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: auto;
   margin: 5px;
   padding: 5px;
 }
+
+.imageContainer img:hover{
+  transform: scale(1.25) ;
+}
+
+.checkOutWork{
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
 .carouselContainer .imageContainer div ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .carouselContainer .imageContainer div ul li {
   display: inline;
   margin: 3px;
-  color: grey;
+  color: #e6f1ff;
   cursor: pointer;
 }
+
 .carouselContainer .left-arrow,
 .carouselContainer .right-arrow {
   cursor: pointer;
 }
+
 .carouselContainer .left-arrow h1,
 .carouselContainer .right-arrow h1 {
   border: 2px solid black;
@@ -45,12 +64,12 @@
   margin: 5px;
   padding: 5px;
 }
-@media only screen and (max-width: 600px) {
-  .carouselContainer .imageContainer img {
-    width: 200px;
-    height: 150px;
-  }
+
+.left-arrow,
+.right-arrow{
+  color: #e6f1ff;
 }
 
-
-
+.carousel{
+  border-radius: 50px;
+}

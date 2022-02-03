@@ -29,10 +29,18 @@
 
             <div class="mobileMenu">
                 <ul id="#buttonMenu" class="menuPosition contactMenuPos">
-                    <li><a class="contactNavInfo"><i class="fas fa-phone"></i></a></li>
-                    <li><a class="contactNavInfo">(123)456-7890</a>
-                    <a class="contactNavInfo"><i class="fas fa-envelope"></i></a></li>
-                    <li><a class="contactNavInfo">duffy_mark@hotmail.com</a></li>
+                    <li><a class="contactNavInfo" href='#aboutMe'>
+                        <p>About</p>
+                    </a></li>
+                    <li><a class="contactNavInfo" href='#skills'>
+                        <p>Skills</p>
+                    <li></a></li>
+                    <a class="contactNavInfo" href='#work'>
+                        <p>My Work</p>
+                    </a></li>
+                    <li><a class="contactNavInfo" href='#resume'>
+                        <p>Resume</p>
+                    </a></li>
                 </ul>
             </div>
         </nav> <!-- end of MOBILE NAV -->
@@ -42,10 +50,10 @@
         <nav class="navBar">
             <a class="logoName">Mark Duffy</a>
                 <div class="rightLinks">
-                    <a class="contactNavInfo"><i class="fas fa-phone"></i></a>
-                    <a class="contactNavInfo">(123)456-7890</a>
-                    <a class="contactNavInfo"><i class="fas fa-envelope"></i></a>
-                    <a class="contactNavInfo">duffy_mark@hotmail.com</a>
+                    <a class="contactNavInfo" href='#aboutMe'><p>About</p></a>
+                    <a class="contactNavInfo" href='#skills'><p>Skills</p></a>
+                    <a class="contactNavInfo" href='#work'><p>My Work</p></a>
+                    <a class="contactNavInfo" href='#resume'><p>Resume</p></a>
                 </div>
         </nav> <!-- end of REG NAVBAR -->
 
@@ -53,13 +61,13 @@
     
             <div class="titleImg">
                 <div class='center'>
-                    <h1>Hi, I'm a <span>Front-End Web Developer</span></h1>
+                    <h1>Hi, I'm a <span class='mainHL'>Front-End Web Developer</span></h1>
 
-                    <a href="#projects"><button aria-label="Click to see projects section" class='projectsBtn'>View My Projects</button></a>
+                    <button aria-label="Click to see projects section" class='projectsBtn'><a href="#work">View My Projects</a></button>
                 </div>
-                <div class='center'>
+                <div class='center mobileCenter'>
                     <img class='selfImage'
-                    src="https://thumbs.dreamstime.com/z/man-standing-silhouette-people-flat-cartoon-icon-78219615.jpg"
+                    src="./styles/assets/Screenshot 2021-11-01 at 7.58.47 PM.png"
                     alt="A Photo of Me">
                 </div>
 
@@ -88,7 +96,7 @@
 
             <div class='aboutMePara'>
                 <h2 class='hiIAm'>Hi, I'm <span class='myName'> Mark Duffy</span></h2>
-                <p>I am a Front-End Web Developer with a passion for accessible, responsive, and clean websites. I enjoy building in many facets of life, and building for a living gives me great pride and joy. Whether it's small scale or large scale projects, I have got you covered.</p>
+                <p>I am a Front-End Web Developer with a passion for <strong class='build'>accessible</strong>, <strong class='build'>responsive</strong>, and <strong class='build'>clean</strong> websites. I enjoy <strong class='build'>building</strong> in many facets of life, and building for a living gives me great pride and joy. Whether it's small scale or large scale projects, I have got you covered.</p>
             </div>
             <div class='contactLinks'>
                 
@@ -100,47 +108,64 @@
             </div>
         </div>
     </main>
-
+<!-- SKILLS GALLERY -->
     <section class='greyBG'>
         <div class='wrapper'>
             <div class='skillsSec'>
-                <h3 class='skillsHeadline'><mark class='highlight'>I've got skills, they're multiplying!</mark></h3>
+                <h3 class='skillsHeadline'><mark class='highlight'
+                id='skills'>I've got skills, they're multiplying!</mark></h3>
                 <h2 class='skillsBring'>What I Will Bring to Your Next Project?</h2>
             </div>
-
-            <!-- SKILLS GALLERY -->
-
             <div class='skillsGallery'>
                 <ul class='skillContainer'>
                     <li class='skill'><i class="fab fa-html5"></i></li>
-                    <li><h3>HTML</h3></li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit cumque facilis inventore reiciendis. Eos quod qui quibusdam quam maiores? Eum iusto neque reiciendis ratione omnis quis tempora ipsum odio assumenda?</li>
+                    <li><h3>HTML5</h3></li>
                 </ul>
                 <ul class='skillContainer'>
                     <li class='skill'><i class="fab fa-js-square"></i></li>
                     <li><h3>JavaScript</h3></li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam cum, obcaecati, deserunt velit tempore similique iste aliquam veritatis esse voluptatibus placeat. Voluptate id possimus eum corporis aperiam. Voluptate, rerum?</li>
                 </ul>
                 <ul class='skillContainer'>
                     <li class='skill'><i class="fas fa-pencil-ruler"></i></li>
                     <li><h3>Web Development</h3></li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos expedita sunt beatae autem qui repellat. Eum error aliquam consectetur nesciunt voluptatem magnam? Amet vel beatae, laborum debitis tenetur dignissimos.</li>
                 </ul>
                 <ul class='skillContainer'>
                     <li class='skill'><i class="fab fa-react"></i></li>
                     <li><h3>React</h3></li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nostrum cumque sed atque ab amet minus totam ipsa voluptas cupiditate accusantium quasi ea eum velit consequuntur! Laborum natus eaque itaque!</li>
                 </ul>
                 <ul class='skillContainer'>
-                    <li class='skill'><i class="far fa-smile"></i></li>
-                    <li><h3>Positive Attitute</h3></li>
-                    <li>Technical skill? Technically not... But in a field like this, where things tend to break, positivity goes a long way. </li>
+                    <li class='skill'><i class="far fa-smile skillHover"></i></li>
+                    <li>
+                        <h3>Positive Attitute</h3>
+                    </li>
+                    <li class="hoverText">
+                        <p class="hidden">Technical skill? Technically not... But in a field like this, where things tend to break, positivity goes a long way. </p>
+                    </li>
+                
                 </ul>
                 <ul class='skillContainer'>
                     <li class='skill'><i class="fab fa-css3"></i></li>
-                    <li><h3>CSS/SASS</h3></li>
-                    <li>Technical skill? Technically not... But in a field like this, where things tend to break, positivity goes a long way. </li>
+                    <li><h3>CSS3/SASS</h3></li>
                 </ul>
+                <ul class='skillContainer'>
+                    <li class='skill'><i class="fab fa-github"></i></li>
+                    <li>
+                        <h3>GitHub</h3>
+                    </li>
+                </ul>
+                <ul class='skillContainer'>
+                    <li class='skill'><i class="fas fa-fire-alt"></i></li>
+                    <li>
+                        <h3>Firebase</h3>
+                    </li>
+                </ul>
+                <ul class='skillContainer'>
+                    <li class='skill'><i class="fas fa-universal-access"></i></li>
+                    <li>
+                        <h3>Accessibility</h3>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </section>
@@ -148,7 +173,10 @@
 <!--Recent Projects Gallery-->
 
 
-        <section>
+        <section class='imageGallery'>
+            <div id='work' class="projects">
+                <h3 class='checkOutWork'><mark class='highlight'>Check Out My Work!</mark></h3>
+            </div>
             <div class="carouselContainer flexCarousel">
                 <div class="left-arrow" onclick="moveLeft()">
                     <i class="fas fa-chevron-left"></i>
@@ -191,7 +219,7 @@
         </div>
     </section>
 
-    <section class='resumeSec'>
+    <section  id='resume' class='resumeSec'>
         <div class="wrapper">
             <div>
                 <h3><mark class='highlight'>Resume</mark></h3>
@@ -202,12 +230,11 @@
             <div class="education">
                 <ul>
                     <li><h2>My Education</h2></li>
-                    <li class='position'>Web Development Bootcamp</li>
+                    <li class='position'>Development Bootcamp</li>
                     <li class="location">Juno College | 2022</li>
-                    <li class='greyUL'>JavaScript, React, Git, Command Line,
+                    <li class='greyUL fontC'>JavaScript, React, Git, Command Line,
                     Firebase & API, Web
-                    Accessibility, Responsive Design
-                </li>
+                    Accessibility, Responsive Design</li>
                 </ul>
                 <ul>
                     <li class='position'>Javascript</li>

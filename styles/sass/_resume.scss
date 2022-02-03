@@ -2,10 +2,17 @@
     margin-top:8%;
 }
 
+
+.resumeSec h2{
+    padding: 2% 0 5% 0;
+    color: black;
+}
+
 .education,
 .experience{
     width: 45%;
-    border-left: 2px solid #f5df4e
+    border-left: 2px solid #f5df4e;
+    padding: 2%;
 }
 
 .resume{
@@ -17,9 +24,9 @@
 
 .greyUL{
     border-bottom: 2px solid hsl(213, 9, 23, .3);
-    color: rgb(110, 115, 121);
     margin: 1%;  
     width: 90%;
+    padding: 2% 0;
 }
 
 .position{
@@ -30,3 +37,12 @@
 .location{
     margin: 1%;
 }
+
+.fontC{
+    color: black;
+}
+
+.position ul li{
+    color: black;
+}
+

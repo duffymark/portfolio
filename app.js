@@ -11,26 +11,27 @@
   }
 }
 
-//CAROUSEL 
+//CAROUSEL (Tutorial used from https://softauthor.com/javascript-image-slider-slideshow-carousel/)
 
-//get all the images and li from HTML
+// get images and li from HTML
 let carouselImages = document.getElementsByClassName("carousel");
 let dotNode = document.getElementsByTagName("li");
-let currentIndex = 1;
+let currentIndex = 0;
 
-//create dots/circle
+// create the dots at bottom of images
 for (let i = 0; i < carouselImages.length; i++) {
-  let newDot = document.createElement("li");
+  let createDot = document.createElement("li");
   
-  newDot.className = "fa fa-circle";
-  newDot.setAttribute("onclick", "dotClick(this.id)");
-  newDot.setAttribute("id", parseInt(i));
+  createDot.className = "fa fa-circle"; //FontAwesome dot icon
+  createDot.setAttribute("onclick", "dotClick(this.id)");
+  createDot.setAttribute("id", parseInt(i)); //parseInt will convert string to integer
   
   let dotContainer = document.querySelector(".dotList");
-  dotContainer.appendChild(newDot);
+  dotContainer.appendChild(createDot);
 }
 
-//function1
+
+//display image function
 function displayImage() {
   for (let j = 0; j < carouselImages.length; j++) {
     carouselImages[j].style.display = "none";
@@ -38,7 +39,7 @@ function displayImage() {
   carouselImages[currentIndex].style.display = "block";
 }
 
-//function2
+// display dot function
 function displayDot() {
   for (let j = 0; j < dotNode.length; j++) {
     dotNode[j].style.color = "grey";
@@ -46,7 +47,7 @@ function displayDot() {
   dotNode[currentIndex].style.color = "black";
 }
 
-//function3
+// scroll forward through images function
 function moveLeft() {
   if (currentIndex == 0) {
     currentIndex = carouselImages.length - 1;
@@ -58,10 +59,10 @@ function moveLeft() {
   displayDot();
 }
 
-//function4
+// scroll backward through images function
 function moveRight() {
   if (currentIndex == carouselImages.length - 1) {
-    currentIndex = 1;
+    currentIndex = 0;
   } else {
     currentIndex++;
   }
@@ -70,14 +71,14 @@ function moveRight() {
   displayDot();
 }
 
-//function5
+// onclick function
 function dotClick(c) {
   currentIndex = c;
   displayImage();
   displayDot();
 }
 
-//initial stage
+//call functions
 displayImage();
 displayDot();
 

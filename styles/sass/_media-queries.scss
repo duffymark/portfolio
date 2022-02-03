@@ -16,4 +16,86 @@
     display: block;
     padding: 5%;
 }
+    .titleImg{
+    display: block;
+    }
+
+    nav,
+    .center{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        line-height: 2rem;
+    }
+    .selfImage{
+        width: 250px;
+    }
+    .mobileCenter{
+        display: flex;
+        justify-content: center;
+        padding: 10%;
+    }
+}
+
+@media (max-width: 885px) {
+    .myImage{
+    width: 250px;
+    }
+    .mainHL{
+    font-size: 2.5rem;
+    }
+    .myImage{
+    width: 200px;
+    }
+    .mainHL{
+    font-size: 2rem;
+    }
+    h1{
+    font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .getToKnow,
+    .hiIAm{
+        font-size: 1.25rem;
+        padding-bottom: 3%;
+    }
+    .aboutMePara p{
+        width: 80%;
+    }
+    .contactLinks a{
+    padding: 5%;
+    }
+    .checkOutWork {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    }
+    .carouselContainer .imageContainer img {
+    width: 400px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    }
+    .position {
+    font-weight: bold;
+    margin: 10% 0;
+    }
+
+    .footerLinks p{
+        padding: 5%;
+    }
+
+    .footerLinks{
+        padding: 8%;
+    }
+
+    .contactIcons li {
+    padding: 5%;
+    }
+}
+
+@media (max-width: 360px) {
+
 }

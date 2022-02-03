@@ -241,6 +241,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: #e6f1ff;
 }
 
 * {
@@ -249,13 +250,13 @@ body {
 }
 
 header {
-  background-color: #f5df4e;
+  background-color: #233554;
   height: 100vh;
   background-size: cover;
 }
 
-h1 {
-  line-height: 4.25rem;
+.mainHL {
+  font-size: 3rem;
 }
 
 .myImage {
@@ -302,6 +303,11 @@ h1 {
           justify-content: center;
 }
 
+.imageGallery {
+  padding-bottom: 8%;
+  background: #233554;
+}
+
 .imageContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,10 +336,20 @@ h1 {
 }
 
 .carouselContainer .imageContainer img {
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: auto;
   margin: 5px;
   padding: 5px;
+}
+
+.imageContainer img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.checkOutWork {
+  padding-bottom: 2%;
+  padding-top: 2%;
 }
 
 .carouselContainer .imageContainer div ul {
@@ -345,7 +361,7 @@ h1 {
 .carouselContainer .imageContainer div ul li {
   display: inline;
   margin: 3px;
-  color: grey;
+  color: #e6f1ff;
   cursor: pointer;
 }
 
@@ -364,19 +380,66 @@ h1 {
   padding: 5px;
 }
 
-@media only screen and (max-width: 600px) {
-  .carouselContainer .imageContainer img {
-    width: 200px;
-    height: 150px;
-  }
+.left-arrow,
+.right-arrow {
+  color: #e6f1ff;
 }
+
+.carousel {
+  border-radius: 50px;
+}
+
 .projectsBtn {
   width: 250px;
   margin: 0 auto;
   background-color: #353a40;
-  color: white;
+  color: #e6f1ff;
   border: none;
   padding: 10px 20px;
+  background: black;
+  border: 1px solid #e6f1ff;
+  border-radius: 25px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.projectsBtn a:visited {
+  color: #e6f1ff;
+}
+
+.projectsBtn:hover, .projectsBtn:hover, .projectsBtn:focus {
+  background: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.projectsBtn:hover.projectsBtn a, .projectsBtn:hover.projectsBtn a, .projectsBtn:focus.projectsBtn a {
+  color: black;
+}
+
+.projectsBtn:active {
+  color: red;
+}
+
+.hireBtn {
+  width: 250px;
+  margin: 0 auto;
+  color: #353a40;
+  border: none;
+  padding: 10px 20px;
+  background: #e6f1ff;
+  border: 1px solid #353a40;
+  border-radius: 25px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hireBtn:hover, .hireBtn:focus {
+  background: #353a40;
+  color: #e6f1ff;
+}
+
+.hireBtn:active {
+  color: red;
 }
 
 .wrapper {
@@ -404,7 +467,25 @@ h1, h2, h3, h4, p {
   text-align: center;
 }
 
+h1 {
+  color: #ccd6f6;
+  line-height: 4.25rem;
+}
+
+.navBar a {
+  color: #ccd6f6;
+}
+
+.scrollDown a {
+  color: #ccd6f6;
+}
+
+.contactNavInfo i {
+  color: #57cbff;
+}
+
 .navBar {
+  padding: 0 3% 0px 3%;
   width: 100%;
   overflow: hidden;
 }
@@ -425,6 +506,17 @@ h1, h2, h3, h4, p {
 .rightLinks {
   float: right;
   text-align: center;
+}
+
+.rightLinks a {
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.rightLinks a:hover {
+  color: white;
+  border: 1px solid white;
 }
 
 .flexContainer {
@@ -486,35 +578,20 @@ h1, h2, h3, h4, p {
   position: relative;
 }
 
-.aboutMeSec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main {
-  padding: 0;
-  margin: 0;
-}
-
 .resumeSec {
   margin-top: 8%;
+}
+
+.resumeSec h2 {
+  padding: 2% 0 5% 0;
+  color: black;
 }
 
 .education,
 .experience {
   width: 45%;
   border-left: 2px solid #f5df4e;
+  padding: 2%;
 }
 
 .resume {
@@ -533,9 +610,9 @@ main {
 
 .greyUL {
   border-bottom: 2px solid rgba(53, 58, 64, 0.3);
-  color: #6e7379;
   margin: 1%;
   width: 90%;
+  padding: 2% 0;
 }
 
 .position {
@@ -545,6 +622,14 @@ main {
 
 .location {
   margin: 1%;
+}
+
+.fontC {
+  color: black;
+}
+
+.position ul li {
+  color: black;
 }
 
 .hireMeBG {
@@ -565,15 +650,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.hireBtn {
-  width: 250px;
-  margin: 0 auto;
-  background-color: #f5df4e;
-  color: #353a40;
-  border: none;
-  padding: 10px 20px;
 }
 
 .keyboardImg {
@@ -602,7 +678,30 @@ main {
   font-weight: bold;
 }
 
+main {
+  background: #e6f1ff;
+  padding: 0;
+  margin: 0;
+}
+
+.build {
+  font-weight: bold;
+}
+
 .aboutMeSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 8%;
 }
 
@@ -665,15 +764,21 @@ main {
 .contactLinks a {
   text-align: center;
   padding: 2%;
+  color: #233554;
 }
 
 /* SKILLS SECTION */
+.greyBG {
+  padding-bottom: 8%;
+  background: #e6f1ff;
+}
+
 .skillsHeadline {
   padding-top: 8%;
 }
 
 .skillsBring {
-  padding-top: 2%;
+  padding-top: 3%;
   padding-bottom: 5%;
 }
 
@@ -708,6 +813,12 @@ main {
           flex-direction: column;
   text-align: center;
   width: 30%;
+  padding: 2%;
+}
+
+.skillContainer h3,
+.skillContainer p {
+  color: black;
 }
 
 .skillsGallery {
@@ -720,6 +831,8 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   color: #353a40;
+  margin: 0;
+  padding: 0;
 }
 
 .skillsGallery li {
@@ -728,16 +841,26 @@ main {
 
 .skillsGallery i {
   font-size: 2rem;
+  color: #233554;
+}
+
+.hoverText {
+  display: none;
+}
+
+.skillHover:hover {
+  display: block;
+  color: black;
 }
 
 .footerBG {
-  background-color: #f5df4e;
+  background-color: #233554;
   width: 100%;
   background-size: cover;
 }
 
 .footerBG i {
-  color: #353a40;
+  color: #e6f1ff;
 }
 
 .getInTouch {
@@ -746,15 +869,29 @@ main {
   margin-right: 10%;
 }
 
+.getInTouch h2 {
+  padding: 2%;
+  color: #e6f1ff;
+}
+
+.getInTouch p {
+  padding: 2%;
+  color: #e6f1ff;
+}
+
 .contactIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactIcons li {
   padding: 2%;
 }
 
@@ -850,6 +987,99 @@ footer a:focus, footer a:hover {
 
   .buttonTransparent {
     display: block;
+    padding: 5%;
+  }
+
+  .titleImg {
+    display: block;
+  }
+
+  nav,
+.center {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    line-height: 2rem;
+  }
+
+  .selfImage {
+    width: 250px;
+  }
+
+  .mobileCenter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10%;
+  }
+}
+@media (max-width: 885px) {
+  .myImage {
+    width: 250px;
+  }
+
+  .mainHL {
+    font-size: 2.5rem;
+  }
+
+  .myImage {
+    width: 200px;
+  }
+
+  .mainHL {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .getToKnow,
+.hiIAm {
+    font-size: 1.25rem;
+    padding-bottom: 3%;
+  }
+
+  .aboutMePara p {
+    width: 80%;
+  }
+
+  .contactLinks a {
+    padding: 5%;
+  }
+
+  .checkOutWork {
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  .carouselContainer .imageContainer img {
+    width: 400px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .position {
+    font-weight: bold;
+    margin: 10% 0;
+  }
+
+  .footerLinks p {
+    padding: 5%;
+  }
+
+  .footerLinks {
+    padding: 8%;
+  }
+
+  .contactIcons li {
     padding: 5%;
   }
 }

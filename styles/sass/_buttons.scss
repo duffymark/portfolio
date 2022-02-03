@@ -2,8 +2,51 @@
     width: 250px;
     margin: 0 auto;
     background-color: #353a40;
-    color: white;
+    color: #e6f1ff;
     border: none;
     padding: 10px 20px;
+    background: black;
+    border: 1px solid #e6f1ff;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
 }
 
+.projectsBtn a:visited{
+    color: #e6f1ff;
+}
+
+.projectsBtn:hover, .projectsBtn:hover, .projectsBtn:focus {
+    background: white;
+    transition: 0.3s ease-in-out;
+    &.projectsBtn a{
+  
+  color: black;
+    }
+}
+
+.projectsBtn:active {
+  color: red;
+}
+
+// HIRE BUTTON
+
+.hireBtn{
+    width: 250px;
+    margin: 0 auto;
+    color: #353a40;
+    border: none;
+    padding: 10px 20px;
+    background:#e6f1ff;
+    border: 1px solid #353a40;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.hireBtn:hover, .hireBtn:focus {
+  background: #353a40;
+  color: #e6f1ff;
+}
+
+.hireBtn:active {
+  color: red;
+}

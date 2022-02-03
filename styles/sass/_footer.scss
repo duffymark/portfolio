@@ -1,11 +1,11 @@
 .footerBG{
-    background-color: #f5df4e;
+    background-color: #233554;
     width: 100%;
     background-size: cover; 
 }
 
 .footerBG i{
-    color: #353a40;
+    color: #e6f1ff;
 }
 
 .getInTouch{
@@ -14,11 +14,24 @@
     margin-right: 10%;
 }
 
+.getInTouch h2{
+    padding: 2%;
+    color: #e6f1ff;
+}
+
+.getInTouch p{
+    padding: 2%;
+    color: #e6f1ff;
+}
+
 
 .contactIcons{
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactIcons li{
     padding: 2%;
 }
 
