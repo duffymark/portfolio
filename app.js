@@ -1,6 +1,6 @@
-// BURGER MENU
+// // BURGER MENU
 
- function displayMenu() {
+function displayMenu() {
 
   const menuAppear = document.getElementById('#buttonMenu');    
   if(menuAppear.style.display === "block") { 
@@ -10,6 +10,7 @@
     menuAppear.style.display = "block";
   }
 }
+
 
 //CAROUSEL (Tutorial used from https://softauthor.com/javascript-image-slider-slideshow-carousel/)
 

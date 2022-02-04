@@ -1,6 +1,4 @@
-
-
-// CAROUSEL 2
+// CAROUSEL 
 
 .imageGallery{
   padding-bottom: 8%;
@@ -26,10 +24,6 @@
   height: auto;
   margin: 5px;
   padding: 5px;
-}
-
-.imageContainer img:hover{
-  transform: scale(1.25) ;
 }
 
 .checkOutWork{
@@ -73,3 +67,52 @@
 .carousel{
   border-radius: 50px;
 }
+
+// DESCRIPTIONS
+
+.recentWorkDesc{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 5%;
+}
+
+.recentWorkDesc a,
+.recentWorkDesc p,
+.recentWorkDesc h2{
+  text-decoration: none;
+  color: #e6f1ff;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.recentWorkDesc h2{
+  margin-bottom: 2%;
+  border: 1px solid #e6f1ff;
+  width: 300px;
+  margin: 2% auto
+}
+
+.recentWorkDesc p{
+  margin-left:5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.links P{
+  border-bottom: 1px solid #e6f1ff;
+}
+
+.recentWorkDesc .builtBy a:hover{
+  color: orange;
+}
+
+.links a:hover{
+  color: orange;
+}
+

@@ -1,4 +1,79 @@
+@media (max-width: 1075px) {
+    .navBar{
+    padding: 0 1% 0 1%;
+    }
+    h1{
+        font-size: 1.75rem
+    };
+    .mainHL{
+        font-size: 2.5rem;
+    }
+    .myImage{
+    width: 250px;
+    }
+}
+
+@media (max-width: 960px) {
+    h1{
+    font-size: 1.25rem
+    };
+    .mainHL{
+    font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 885px) {
+    .myImage{
+    width: 250px;
+    }
+    .mainHL{
+    font-size: 2.5rem;
+    }
+    .myImage{
+    width: 200px;
+    }
+    .mainHL{
+    font-size: 2rem;
+    }
+    h1{
+    font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 845px) {
+    h1{
+    font-size: 2rem
+    };
+    .mainHL{
+    font-size: 2rem;
+    }
+    .myImage{
+    width: 100px;
+    }
+    .getToKnow,
+    .hiIAm{
+        font-size: 1.25rem;
+        padding-bottom: 3%;
+    }
+    .aboutMePara p{
+        width: 80%;
+    }
+    .contactLinks a{
+    padding: 5%;
+    }
+    .checkOutWork {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    }
+}
+
+
 @media (max-width: 750px) {
+    .hiddenLogo{
+        display: block;
+        color: #ccd6f6;
+        padding-bottom: 1%;
+    }
     .mobileBurger{
         visibility: visible;
     }
@@ -12,6 +87,16 @@
     .hiddenLogo{
     visibility: visible;
 }
+
+    h1{
+        line-height: 3rem;
+    }
+
+    .navBar a,
+    .rightLinks a{
+    padding: 5%;
+    }
+
     .buttonTransparent{
     display: block;
     padding: 5%;
@@ -36,27 +121,24 @@
         justify-content: center;
         padding: 10%;
     }
+        .footerLinks p{
+        padding: 5%;
+    }
+
+    .footerLinks{
+        padding: 8%;
+    }
+
+    .contactIcons li {
+    padding: 5%;
+    }
 }
 
-@media (max-width: 885px) {
-    .myImage{
-    width: 250px;
-    }
-    .mainHL{
-    font-size: 2.5rem;
-    }
-    .myImage{
-    width: 200px;
-    }
-    .mainHL{
-    font-size: 2rem;
-    }
-    h1{
-    font-size: 1.75rem;
-    }
-}
 
 @media (max-width: 500px) {
+    h2, h3{
+        font-size: 1rem;
+    }
     .getToKnow,
     .hiIAm{
         font-size: 1.25rem;
@@ -94,8 +176,28 @@
     .contactIcons li {
     padding: 5%;
     }
+
+    .recentWorkDesc{
+    margin-top: 10%;
+    }
+
+    .recentWorkDesc h2{
+    margin-bottom: 5%;
+    }
+
+.recentWorkDesc p{
+    margin-left:10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 475px) {
+    .carouselContainer .imageContainer img {
+    width: 300px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    }
 
 }

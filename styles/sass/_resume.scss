@@ -46,3 +46,69 @@
     color: black;
 }
 
+.resumeInfo ul li{
+    color: black;
+}
+
+// FORM
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 2%;
+}
+
+input,
+textarea,
+#formButton{
+    margin: 2%;
+}
+
+#formButton{
+    width: 250px;
+    margin: 0 auto;
+    background-color: #353a40;
+    color: #e6f1ff;
+    border: none;
+    padding: 10px 20px;
+    background: black;
+    border: 1px solid #e6f1ff;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+    #formButton:hover{
+    background: white;
+    color: #353a40;
+    border: 1px black solid;
+}
+
+    #formButton:active {
+    color: red;
+}
+
+input,
+textarea{
+    border: none;
+    border-radius: 15px;
+}
+
+input{
+    padding: 5px;
+}
+
+.contactForm h3{
+    padding: 3%;
+}
+
+#name, #email{
+    padding: 15px;
+}
+
+#textarea{
+    padding: 15px;
+}

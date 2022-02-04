@@ -19,13 +19,12 @@
     background: white;
     transition: 0.3s ease-in-out;
     &.projectsBtn a{
-  
-  color: black;
+    color: black;
     }
 }
 
 .projectsBtn:active {
-  color: red;
+    color: red;
 }
 
 // HIRE BUTTON
@@ -43,10 +42,10 @@
 }
 
 .hireBtn:hover, .hireBtn:focus {
-  background: #353a40;
-  color: #e6f1ff;
+    background: #353a40;
+    color: #e6f1ff;
 }
 
 .hireBtn:active {
-  color: red;
+    color: red;
 }
