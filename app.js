@@ -87,3 +87,43 @@ console.log('Thank you for visiting my website')
 console.log('If you would like to collaborate together please don\'t hesitate to reach out to me')
 console.log('Click my photo at the top of the page!')
 
+// TEST
+
+// TEXT CHANGER
+
+
+
+    // const nextBtn = document.getElementById("btn_next");
+    // function changeText() {
+    //     const changeTheHL = document.getElementById("txt");
+    //     var chapter = Number(textBox.dataset.chapter);
+
+  const myArray = [
+  'Front-End Web Developer',
+  'Creator',
+  'Father',
+  'Husband',
+  'Son',
+  'Uncle',
+  'Hockey Fan',
+  'Comedy Fan',
+  'Guy with a beard',
+  'Juno College Alum Cohort 38!'
+    ];
+
+let i = 0;
+
+document.querySelector("#txt").innerHTML = myArray[i];
+
+function nextHeadline() {
+  if (i < myArray.length - 1) {
+  i++;
+  } else {
+    i = 0;
+  }
+  document.querySelector('#txt').innerHTML = myArray[i]
+}
+
+
+
+

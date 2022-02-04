@@ -61,13 +61,25 @@
     
         <div class="titleImg">
             <div class='center'>
-                <h1>Hi, I'm a<span class='mainHL'>Front-End Developer</span></h1>
+                <!-- <h1>Hi, I'm a<span class='mainHL'>Front-End Developer</span></h1> -->
+
+                <!-- TEST -->
+
+            <div class="headlineContainer">
+                    
+                    
+                    <h1>Hi, I'm a
+                <button id="btn_next" type="button" name='button' onclick="nextHeadline()">
+                        <span class='mainHL'id="txt" class="txt1" data-chapter="0">Front-End Developer</span>
+                    </h1>
+                </button>
+            </div>
 
                 <button aria-label="Click to see projects section" class='projectsBtn'><a href="#work">View My Projects</a></button>
             </div>
 
             <div class='center mobileCenter'>
-                <input aria-label="An image and drawing of myself " class='native-hidden selfImage' type="checkbox" />
+                <input aria-label="An image and drawing of myself " class='imgHidden selfImage' type="checkbox" />
             </div>
 
         </div>
@@ -288,7 +300,7 @@
     <div class="wrapper">
         <h3><mark class='highlight'>Contact Me</mark></h3>
         <p>Want to chat? Have any questions? Drop me a line or feel free to connect with me via social media.</p>
-    <form action="https://formspree.io/f/xqknpdwr" method="POST">
+    <form name="contact" method="POST" data-netlify="true">
     
         <input id= 'name' type="name" name="name" placeholder='name' aria-label="Input your name">
     
