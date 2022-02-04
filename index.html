@@ -18,7 +18,7 @@
         <!-- BURGER MENU -->
         <nav class='mobileBurger'>
             <div class="burger">
-                <button id="buttonMenu" class="buttonTransparent" onClick="displayMenu()">
+                <button id="buttonMenu" class="buttonTransparent" onClick="displayMenu()" aria-label="Click to open burger menu">
                     <i class="fas fa-bars" id="hiddenMenu"></i>
                 </button>
             </div>
@@ -72,11 +72,11 @@
             </div>
         </div>
         <div class='scrollDown'>
-            <a href='#aboutMe'><i class="downArrow fas fa-chevron-down"></i></a>
+            <a href='#aboutMe' aria-label="Click to scroll down"><i class="downArrow fas fa-chevron-down"></i></a>
         </div>
     </div> <!--  end of WRAPPER -->
 </header> <!--  end of HEADER -->
-      
+
 <main><!-- MAIN SECTION -->
     <div class='wrapper'>
         <div class="aboutSection">
@@ -102,49 +102,45 @@
         </div>
         <div class='skillsGallery'>
             <ul class='skillContainer'>
-                <li class='skill'><i class="fab fa-html5"></i></li>
+                <li class='skill'><i class="fab fa-html5" aria-label="Image of HTML logo"></i></li>
                 <li><h3>HTML5</h3></li>
             </ul>
             <ul class='skillContainer'>
-                <li class='skill'><i class="fab fa-js-square"></i></li>
+                <li class='skill'><i class="fab fa-js-square"  aria-label="Image of JavaScript logo"></i></li>
                 <li><h3>JavaScript</h3></li>
             </ul>
             <ul class='skillContainer'>
-                <li class='skill'><i class="fas fa-pencil-ruler"></i></li>
+                <li class='skill'><i class="fas fa-pencil-ruler" aria-label="Image of pencil and ruler"></i></li>
                 <li><h3>Web Development</h3></li>
             </ul>
             <ul class='skillContainer'>
-                <li class='skill'><i class="fab fa-react"></i></li>
+                <li class='skill'><i class="fab fa-react" aria-label="Image of React logo"></i></li>
                 <li><h3>React</h3></li>
             </ul>
             <ul class='skillContainer'>
-                <li class='skill'><i class="far fa-smile skillHover"></i></li>
+                <li class='skill'><i class="far fa-smile skillHover" aria-label="Image of smiley face"></i></li>
                 <li>
                     <h3>Positive Attitute</h3>
                 </li>
-                <li class="hoverText">
-                    <p class="hidden">Technical skill? Technically not... But in a field like this, where things tend to break, positivity goes a long way. </p>
-                </li>
-            
             </ul>
             <ul class='skillContainer'>
-                <li class='skill'><i class="fab fa-css3"></i></li>
+                <li class='skill'><i class="fab fa-css3" aria-label="Image of CSS logo"></i></li>
                 <li><h3>CSS3/SASS</h3></li>
             </ul>
             <ul class='skillContainer'>
-                <li class='skill'><i class="fab fa-github"></i></li>
+                <li class='skill'><i class="fab fa-github" aria-label="Image of github logo"></i></li>
                 <li>
                     <h3>GitHub</h3>
                 </li>
             </ul>
             <ul class='skillContainer'>
-                <li class='skill'><i class="fas fa-fire-alt"></i></li>
+                <li class='skill'><i class="fas fa-fire-alt"  aria-label="Image of fire logo"></i></li>
                 <li>
                     <h3>Firebase</h3>
                 </li>
             </ul>
             <ul class='skillContainer'>
-                <li class='skill'><i class="fas fa-universal-access"></i></li>
+                <li class='skill'><i class="fas fa-universal-access"  aria-label="Image of universal access logo"></i></li>
                 <li>
                     <h3>Accessibility</h3>
                 </li>
@@ -163,7 +159,7 @@
             <h3 class='checkOutWork'><mark class='highlight'>Check Out My Work!</mark></h3>
         </div>
         <div class="carouselContainer flexCarousel">
-            <div class="left-arrow" onclick="moveLeft()">
+            <div class="left-arrow" onclick="moveLeft()" aria-label="click to scroll left">
                 <i class="fas fa-chevron-left"></i>
             </div>
 
@@ -171,13 +167,13 @@
             
             <a href="https://berks-berks-berks.netlify.app/" target="blank">
             <img class='carousel'
-            src="./styles/assets/page-turners.png"></a>
+            src="./styles/assets/page-turners.png" aria-label="Page Turners Website Link"></a>
 
             <a href="https://reelgoodfilms.netlify.app/" target="blank"><img class='carousel'
-            src="./styles/assets/reel-good-films.png"></a>
+            src="./styles/assets/reel-good-films.png" aria-label="Reel Good Films Website Link"></a>
 
             <a href="https://juno-sweater-weather.netlify.app/" target="blank"><img class='carousel'
-            src="./styles/assets/sweater-weather.png"></a>
+            src="./styles/assets/sweater-weather.png" aria-label="Sweater Weather Website Link"></a>
             
             
             <div>
@@ -194,20 +190,20 @@
         <div class="recentWorkDesc">   
             <h2 class="workTitle">Reel Good Films</h2>
             <p class='description'>A JavaScript based website that allows users to search for movies based on keyword, or genre, or year. It uses an API call to pull from a database and displays its findings on the webpage.</p>
-            <em><p class='builtBy'>Built with <a href='https://github.com/justinv416'>Justin Vien</a></p></em>
+            <em><p class='builtBy'>Built with <a href='https://github.com/justinv416' aria-label="Link to Justin Vien's github">Justin Vien</a></p></em>
             <div class="links">
-            <p><a class='gitRepo' href="https://github.com/MarkAndJustin/ReelGoodFilms">Git Repo</a></p>
-            <p><a class='liveLink' href="https://reelgoodfilms.netlify.app/">Live Link</a></p>
+            <p><a class='gitRepo' href="https://github.com/MarkAndJustin/ReelGoodFilms" aria-label="Link to Reel Good Film's github">Git Repo</a></p>
+            <p><a class='liveLink' href="https://reelgoodfilms.netlify.app/" aria-label="Link to Reel Good Films live site">Live Link</a></p>
                 </div>
         </div>
         <div class="recentWorkDesc">
             <h2 class="workTitle">Page Turners</h2>
             <p class='description'>A React based website that allows the user to search for books by genre, title, author, and allows them to compile a reading list using Firebase.</p>
-            <em><p class='builtBy'>Built with <a href='https://kevans.co/'>Karen Evans,</a> <a href='https://paulinesulit.com/'>Pauline Sulit,</a>
-                <a href='https://www.linkedin.com/in/antoniib/'>Antoni Ibrahim</a></p></em>
+            <em><p class='builtBy'>Built with <a href='https://kevans.co/' aria-label="Link to Karen Evans website">Karen Evans,</a> <a href='https://paulinesulit.com/' aria-label="Link to Pauline Sulit's website">Pauline Sulit,</a>
+                <a href='https://www.linkedin.com/in/antoniib/' aria-label="Link to Antoni Ibrahim's github">Antoni Ibrahim</a></p></em>
             <div class="links">
-                <p><a class='gitRepo' href="https://github.com/best-page-turners/project-four">Git Repo</a></p>
-                <p><a class='liveLink' href="https://murder-page-turners.netlify.app/">Live Link</a></p>
+                <p><a class='gitRepo' href="https://github.com/best-page-turners/project-four"  aria-label="Link to Page Turners git repo">Git Repo</a></p>
+                <p><a class='liveLink' href="https://murder-page-turners.netlify.app/"  aria-label="Link to Page Turners live site">Live Link</a></p>
             </div>
         </div>
         <div class="recentWorkDesc">
@@ -215,8 +211,8 @@
             <p class='description'>A React application that allows the user to search for the current weather in their town or city.</p>
             <em><p class='builtBy'>Built by Mark Duffy</p></em>
             <div class="links">
-            <p><a class='gitRepo' href="https://github.com/duffymark/sweater-weather">Git Repo</a></p>
-            <p><a class='liveLink' href="https://github.com/duffymark/sweater-weather">Live Link</a></p>
+            <p><a class='gitRepo' href="https://github.com/duffymark/sweater-weather" aria-label="Link to Sweater Weather gitRepo">Git Repo</a></p>
+            <p><a class='liveLink' href="https://github.com/duffymark/sweater-weather"  aria-label="Link to Sweater Weather live site">Live Link</a></p>
             </div>
         </div>
         </div> <!--end of recentWork -->
@@ -229,7 +225,7 @@
         <div class="keyboardImg">
             <!-- <div class='hireMe'> -->
             <h2>Interested In Working With Me?</h2>
-            <a href='https://www.linkedin.com/in/markduffy-webdev/'><button class='hireBtn'>Hire Me</button></a>
+            <a href='https://www.linkedin.com/in/markduffy-webdev/'  aria-label="Click to go to Mark Duffys linkedIn site"><button class='hireBtn'>Hire Me</button></a>
             <!-- </div> -->
         </div>
     </div>
@@ -294,13 +290,13 @@
         <p>Want to chat? Have any questions? Drop me a line or feel free to connect with me via social media.</p>
     <form action="https://formspree.io/f/xqknpdwr" method="POST">
     
-        <input id= 'name' type="name" name="name" placeholder='name'>
+        <input id= 'name' type="name" name="name" placeholder='name' aria-label="Input your name">
     
-        <input id='email' type="email" name="_replyto" placeholder='email'>
+        <input id='email' type="email" name="_replyto" placeholder='email' aria-label="Input your email">
     
-        <textarea id='textarea' name="message" placeholder='message'></textarea>
+        <textarea id='textarea' name="message" placeholder='message'  aria-label="Input your message"></textarea>
 
-        <button id='formButton' type="submit">send message</button>
+        <button id='formButton' type="submit" aria-label="Submit your information">send message</button>
     </form>
     </div>
 </section>
@@ -313,10 +309,10 @@
                 <p>I am always excited to discuss new opportunities or projects with others. Please feel free to reach out with as much information posible so we can get the most out of our first contact. I look forward to speaking with you soon.</p>
                 <div>
                     <ul class='contactIcons'>
-                        <li><a href="tel:808-476-7832"><i class="fas fa-phone"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/markduffy-webdev/"><i class="fab fa-linkedin"></i></a></i></li>
-                        <li><a href="mailto:duffy_mark@hotmail.com"><i class="fas fa-envelope"></i></a></li>
-                        <li><a href="https://github.com/duffymark"><i class="fab fa-github"></i></a></li>
+                        <li><a href="tel:808-476-7832" aria-label="Mark Duffy phone number"><i class="fas fa-phone"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/markduffy-webdev/" aria-label="Mark Duffys linkedIn"><i class="fab fa-linkedin"></i></a></i></li>
+                        <li><a href="mailto:duffy_mark@hotmail.com" aria-label="Mark Duffys email address"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://github.com/duffymark" aria-label="Mark Duffys github"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
