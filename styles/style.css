@@ -884,7 +884,8 @@ main {
 
 .aboutMePara p {
   text-align: initial;
-  width: 50%;
+  width: 60%;
+  line-height: 1.75rem;
 }
 
 /* CONTACT LINKS */
