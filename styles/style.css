@@ -249,6 +249,38 @@ body {
   padding: 0;
 }
 
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+li {
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, p, label {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #ccd6f6;
+  line-height: 4.25rem;
+}
+
+.navBar a {
+  color: #ccd6f6;
+}
+
+.scrollDown a {
+  color: #ccd6f6;
+}
+
+.contactNavInfo i {
+  color: #57cbff;
+}
+
 header {
   background-color: #233554;
   height: 100vh;
@@ -269,6 +301,7 @@ header {
 .headlineContainer {
   margin-left: 1%;
   margin-right: 1%;
+  min-width: 730px;
 }
 
 .myImage {
@@ -540,38 +573,6 @@ span {
   display: block;
 }
 
-a {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-}
-
-li {
-  font-family: "Roboto", sans-serif;
-  list-style-type: none;
-}
-
-h1, h2, h3, h4, p, label {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
-
-h1 {
-  color: #ccd6f6;
-  line-height: 4.25rem;
-}
-
-.navBar a {
-  color: #ccd6f6;
-}
-
-.scrollDown a {
-  color: #ccd6f6;
-}
-
-.contactNavInfo i {
-  color: #57cbff;
-}
-
 .navBar {
   padding: 0 3% 0px 3%;
   width: 100%;
@@ -687,6 +688,11 @@ h1 {
   width: 45%;
   border-left: 2px solid #f5df4e;
   padding: 2%;
+}
+
+.resumeInfo ul li,
+.resumeInfo ul li {
+  color: #233554;
 }
 
 .resume {

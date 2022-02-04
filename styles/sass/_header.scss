@@ -21,6 +21,7 @@ header{
 .headlineContainer{
     margin-left: 1%;
     margin-right: 1%;
+    min-width: 730px;
 }
 
 // HERO SECTION
@@ -69,5 +70,6 @@ input[type="checkbox"]:checked {
     -moz-appearance: none;
     appearance: none;
 }
+
 
 

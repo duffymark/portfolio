@@ -86,6 +86,7 @@ displayDot();
 console.log('Thank you for visiting my website')
 console.log('If you would like to collaborate together please don\'t hesitate to reach out to me')
 console.log('Click my photo at the top of the page!')
+console.log('Click the Front-End Developer text too')
 
 // TEST
 
