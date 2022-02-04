@@ -461,6 +461,10 @@ header {
   color: #e6f1ff;
 }
 
+a:visited {
+  color: #e6f1ff;
+}
+
 .projectsBtn:hover, .projectsBtn:hover, .projectsBtn:focus {
   background: white;
   -webkit-transition: 0.3s ease-in-out;
@@ -805,6 +809,7 @@ input {
 
 .keyboardImg h2 {
   color: whitesmoke;
+  padding: 2%;
 }
 
 .myName {
