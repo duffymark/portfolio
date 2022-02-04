@@ -39,3 +39,23 @@ header{
     
 }
 
+// TEST
+
+input[type="checkbox"] {
+    content: url('/styles/assets/Screenshot\ 2021-11-01\ at\ 7.58.47\ PM.png');
+    display: block;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked {
+    content: url('/styles/assets/Untitled.png');
+}
+
+.native-hidden {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
