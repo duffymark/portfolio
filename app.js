@@ -15,7 +15,7 @@ function displayMenu() {
 //CAROUSEL (Tutorial used from https://softauthor.com/javascript-image-slider-slideshow-carousel/)
 
 // get images and li from HTML
-let carouselImages = document.getElementsByClassName("carousel");
+let carouselImages = document.getElementsByClassName("carouselFlexContainer");
 let dotNode = document.getElementsByTagName("li");
 let currentIndex = 0;
 

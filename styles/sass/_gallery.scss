@@ -76,6 +76,7 @@
   flex-direction: column;
   align-content: center;
   margin-top: 5%;
+  max-width: 875px;
 }
 
 .recentWorkDesc a,
@@ -114,5 +115,15 @@
 
 .links a:hover{
   color: orange;
+}
+
+/*TEST*/
+
+.carouselFlexContainer{
+  display: flex;
+}
+
+.dotList{
+  display: none;
 }
 
