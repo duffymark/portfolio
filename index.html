@@ -34,15 +34,27 @@
                     <li><a class="contactNavInfo" href='#aboutMe'>
                         <p>About</p>
                     </a></li>
+
                     <li><a class="contactNavInfo" href='#skills'>
                         <p>Skills</p>
-                    <li></a></li>
+                    </a>
+                    </li>
+
+                    <li>
                     <a class="contactNavInfo" href='#work'>
-                        <p>My Work</p>
+                        <p>Projects</p>
+                    </a>
+                    </li>
+
+                    <li>
+                    <a class="contactNavInfo" href='#contact'>
+                        <p>Contact</p>
                     </a></li>
+
                     <li><a href='./styles/assets/Mark Duffy Final Resume.pdf' class="contactNavInfo" 
                     alt='Download a copy of my resume' target='blank'>
                     Resume</a></li>
+
                 </ul>
             </div>
         </nav> <!-- end of MOBILE NAV -->
@@ -54,7 +66,11 @@
                 <div class="rightLinks">
                     <a class="contactNavInfo" href='#aboutMe'><p>About</p></a>
                     <a class="contactNavInfo" href='#skills'><p>Skills</p></a>
-                    <a class="contactNavInfo" href='#work'><p>My Work</p></a>
+                    <a class="contactNavInfo" href='#work'><p>Projects</p></a>
+
+                    <a class="contactNavInfo" href='#contact'>
+                    <p>Contact</p></a>
+
                     <a href='./styles/assets/Mark Duffy Final Resume.pdf' class="contactNavInfo" alt='Download a copy of my resume'
                     target='blank'>
                     Resume</a>
@@ -171,15 +187,115 @@
 
 <section class='imageGallery'>
     <div class="wrapper">
+
         <div id='work' class="projects">
             <h3 class='checkOutWork'><mark class='highlight'>Check Out My Work!</mark></h3>
         </div>
+
         <div class="carouselContainer flexCarousel">
             <div class="left-arrow" onclick="moveLeft()" aria-label="click to scroll left">
                 <i class="fas fa-chevron-left"></i>
             </div>
+        
+        
+                <div class='carouselFlexContainer'><!-- DIV CONTAINING ALL ELEMENTS -->
 
-        <div class="imageContainer flexCarousel">
+                    <div class="imageContainer flexCarousel">
+                        <a href="https://reelgoodfilms.netlify.app/" target="blank"><img class='carousel'
+                                src="./styles/assets/reel-good-films.png" aria-label="Reel Good Films Website Link"></a>
+                    </div>
+                    <div>
+                        <ul class="dotList"></ul>
+                    </div>
+                    
+
+                    <div class='recentWork'>
+                        <div class="recentWorkDesc">
+                            <h2 class="workTitle">Reel Good Films</h2>
+                            <p class='description'>A JavaScript based website that allows users to search for movies based on
+                                keyword, or genre,
+                                or year. It uses an API call to pull from a database and displays its findings on the webpage.
+                            </p>
+                            <em>
+                                <p class='builtBy'>Built with <a href='https://github.com/justinv416'
+                                        aria-label="Link to Justin Vien's github">Justin Vien</a></p>
+                            </em>
+                            <div class="links">
+                                <p><a class='gitRepo' href="https://github.com/MarkAndJustin/ReelGoodFilms"
+                                        aria-label="Link to Reel Good Film's github">Git Repo</a></p>
+                                <p><a class='liveLink' href="https://reelgoodfilms.netlify.app/"
+                                        aria-label="Link to Reel Good Films live site">Live Link</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class='carouselFlexContainer'>
+                            <div class="imageContainer flexCarousel">
+                                <a href="https://berks-berks-berks.netlify.app/" target="blank">
+                                    <img class='carousel' src="./styles/assets/page-turners.png" aria-label="Page Turners Website Link"></a>
+                            </div>
+                            <div>
+                                <ul class="dotList"></ul>
+                            </div>
+
+                            <div class='recentWork'>
+                                <div class="recentWorkDesc">
+                                    <h2 class="workTitle">Page Turners</h2>
+                                    <p class='description'>A React based website that allows the user to search for books by genre, title, author, and
+                                        allows them to compile a reading list using Firebase.</p>
+                                    <em>
+                                        <p class='builtBy'>Built with <a href='https://kevans.co/' aria-label="Link to Karen Evans website">Karen
+                                                Evans,</a> <a href='https://paulinesulit.com/' aria-label="Link to Pauline Sulit's website">Pauline
+                                                Sulit,</a>
+                                            <a href='https://www.linkedin.com/in/antoniib/' aria-label="Link to Antoni Ibrahim's github">Antoni
+                                                Ibrahim</a>
+                                        </p>
+                                    </em>
+                                    <div class="links">
+                                        <p><a class='gitRepo' href="https://github.com/best-page-turners/project-four"
+                                                aria-label="Link to Page Turners git repo">Git Repo</a></p>
+                                        <p><a class='liveLink' href="https://murder-page-turners.netlify.app/"
+                                                aria-label="Link to Page Turners live site">Live Link</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+        
+                                <div class='carouselFlexContainer'>
+                                    <div class="imageContainer flexCarousel">
+                                        <a href="https://juno-sweater-weather.netlify.app/" target="blank"><img class='carousel'
+                                                src="./styles/assets/sweater-weather.png"
+                                                aria-label="Sweater Weather Website Link"></a>
+                                    </div>
+                                    
+
+                                    <div class='recentWork'>
+                                        <div class="recentWorkDesc">
+        
+                                            <h2 class="workTitle">Sweater Weather</h2>
+                                            <p class='description'>A React application that allows the user to search for the
+                                                current weather in their town or city.</p>
+                                            <em>
+                                                <p class='builtBy'>Built by Mark Duffy</p>
+                                            </em>
+                                            <div class="links">
+                                                <p><a class='gitRepo' href="https://github.com/duffymark/sweater-weather"
+                                                        aria-label="Link to Sweater Weather gitRepo">Git Repo</a></p>
+                                                <p><a class='liveLink' href="https://github.com/duffymark/sweater-weather"
+                                                        aria-label="Link to Sweater Weather live site">Live Link</a></p>
+                                            </div>
+        
+        
+                                        </div><!--recent work desc-->
+
+                                    </div> <!--recent work -->
+                                </div> <!--flexCarouselContainer -->
+        
+                            
+
+        <!-- <div class="imageContainer flexCarousel">
             
             <a href="https://berks-berks-berks.netlify.app/" target="blank">
             <img class='carousel'
@@ -189,19 +305,19 @@
             src="./styles/assets/reel-good-films.png" aria-label="Reel Good Films Website Link"></a>
 
             <a href="https://juno-sweater-weather.netlify.app/" target="blank"><img class='carousel'
-            src="./styles/assets/sweater-weather.png" aria-label="Sweater Weather Website Link"></a>
+            src="./styles/assets/sweater-weather.png" aria-label="Sweater Weather Website Link"></a> -->
             
             
-            <div>
-                    <ul class="dotList"></ul>
-            </div>
-        </div> <!-- End of ImageContainer flexCarousel -->
-
+            
+        <!-- </div> End of ImageContainer flexCarousel -->
         <div class="right-arrow" onclick="moveRight()">
             <i class="fas fa-chevron-right"></i>
         </div>
-        </div> <!--end of carouselContainer flexCarousel -->
+        
 
+
+        <!-- </div> end of carouselContainer flexCarousel -->
+<!-- 
         <div class='recentWork'>
         <div class="recentWorkDesc">   
             <h2 class="workTitle">Reel Good Films</h2>
@@ -231,7 +347,7 @@
             <p><a class='liveLink' href="https://github.com/duffymark/sweater-weather"  aria-label="Link to Sweater Weather live site">Live Link</a></p>
             </div>
         </div>
-        </div> <!--end of recentWork -->
+        </div> end of recentWork -->
     </div> <!--end of wrapper -->
 </section> <!--end of section -->
 
@@ -240,29 +356,14 @@
     <div class='wrapper'>
         <div class="keyboardImg">
             <!-- <div class='hireMe'> -->
-            <h2>Interested In Working With Me?</h2>
+            <h2 id="contact">Interested In Working With Me?</h2>
             <a href='https://www.linkedin.com/in/markduffy-webdev/'  aria-label="Click to go to Mark Duffys linkedIn site"><button class='hireBtn'>Hire Me</button></a>
             <!-- </div> -->
         </div>
     </div>
 </section>
 
-<section class=contactForm>
-    <div class="wrapper">
-        <h3><mark class='highlight'>Contact Me</mark></h3>
-        <p>Want to chat? Have any questions? Drop me a line or feel free to connect with me via social media.</p>
-    <form name="contact" method="POST" data-netlify="true">
-    
-        <input id= 'name' type="name" name="name" placeholder='name' aria-label="Input your name">
-    
-        <input id='email' type="email" name="_replyto" placeholder='email' aria-label="Input your email">
-    
-        <textarea id='textarea' name="message" placeholder='message'  aria-label="Input your message"></textarea>
 
-        <button id='formButton' type="submit" aria-label="Submit your information">send message</button>
-    </form>
-    </div>
-</section>
 
 <footer>
     <div class='footerBG'>
@@ -289,3 +390,4 @@
 <script src="app.js"></script>
 </body>
 </html>
+
