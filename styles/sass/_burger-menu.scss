@@ -1,5 +1,7 @@
 .mobileBurger{
     visibility: hidden;
+    display: none;
+    padding: 5%;
 }
 
 #buttonMenu li a{
@@ -41,6 +43,15 @@
     visibility: hidden;
     display: block;
     display: none;
+    align-content: center;
+    padding-left: 5%;
+}
+
+.hiddenLogo h2{
+    border-bottom: 1px solid #ccd6f6;
+    padding-bottom: 0;
+    border-left: 1px solid #ccd6f6;
+    padding: 5px;
 }
 
 .contactNavInfo{
@@ -57,4 +68,25 @@
     color: white;
     border: 1px solid white;
 }
+
+.flexBurger{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#buttonMenu i{
+    color: #ccd6f6;
+}
+
+nav ul li {
+        position: relative;
+    }
+
+nav ul {
+        position: absolute;
+        width: 100%;
+    }
 

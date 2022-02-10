@@ -290,6 +290,8 @@ header {
 .mainHL {
   font-size: 3rem;
   color: #ccd6f6;
+  min-height: 156px;
+  min-width: 730px;
 }
 
 .headlineContainer button {
@@ -302,6 +304,7 @@ header {
   margin-left: 1%;
   margin-right: 1%;
   min-width: 730px;
+  min-height: 277px;
 }
 
 .myImage {
@@ -574,7 +577,7 @@ span {
 }
 
 .navBar {
-  padding: 0 3% 0px 3%;
+  padding-top: 3%;
   width: 100%;
   overflow: hidden;
 }
@@ -975,6 +978,7 @@ main {
   padding: 2px 10px;
   font-weight: 100;
   background-color: #f5df4e;
+  font-size: 2rem;
 }
 
 /* SKILLS GALLERY */
@@ -1098,6 +1102,8 @@ footer a:focus, footer a:hover {
 
 .mobileBurger {
   visibility: hidden;
+  display: none;
+  padding: 5%;
 }
 
 #buttonMenu li a {
@@ -1142,6 +1148,16 @@ footer a:focus, footer a:hover {
   visibility: hidden;
   display: block;
   display: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 5%;
+}
+
+.hiddenLogo h2 {
+  border-bottom: 1px solid #ccd6f6;
+  padding-bottom: 0;
+  border-left: 1px solid #ccd6f6;
+  padding: 5px;
 }
 
 .contactNavInfo {
@@ -1157,6 +1173,37 @@ footer a:focus, footer a:hover {
 .contactNavInfo:hover {
   color: white;
   border: 1px solid white;
+}
+
+.flexBurger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#buttonMenu i {
+  color: #ccd6f6;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul {
+  position: absolute;
+  width: 100%;
 }
 
 @media (max-width: 1075px) {
@@ -1247,6 +1294,7 @@ footer a:focus, footer a:hover {
 
   .mobileBurger {
     visibility: visible;
+    display: block;
   }
 
   .mobileMenu {
