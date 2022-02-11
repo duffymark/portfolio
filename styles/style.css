@@ -626,7 +626,6 @@ span {
 }
 
 .rightLinks a:hover {
-  color: white;
   border: 1px solid white;
 }
 
@@ -1172,21 +1171,6 @@ footer a:focus, footer a:hover {
   padding: 5px;
 }
 
-.contactNavInfo {
-  text-decoration: none;
-  color: #ccd6f6;
-  padding: 0;
-  margin: 0;
-  display: block;
-  border: 1px solid transparent;
-  border-radius: 20px;
-}
-
-.contactNavInfo:hover {
-  color: white;
-  border: 1px solid white;
-}
-
 .flexBurger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1216,6 +1200,25 @@ nav ul li {
 nav ul {
   position: absolute;
   width: 100%;
+}
+
+.contactNavInfo p {
+  color: #233554;
+}
+
+.contactNavInfo {
+  text-decoration: none;
+  opacity: 0.9;
+  color: #ccd6f6;
+  padding: 0;
+  margin: 0;
+  display: block;
+  border: 1px solid transparent;
+}
+
+.contactNavInfo:hover {
+  color: #c43131;
+  border: 1px solid white;
 }
 
 @media (max-width: 1075px) {
@@ -1298,6 +1301,68 @@ nav ul {
   }
 }
 @media (max-width: 750px) {
+  .contactNavInfo {
+    background-color: #ccd6f6;
+    opacity: 0.9;
+  }
+
+  .hiddenLinks p {
+    color: black;
+  }
+
+  .contactNavInfo p:hover {
+    color: #c43131;
+  }
+
+  .headlineContainer {
+    max-width: 719px;
+    min-height: auto;
+    margin: 0 auto;
+    padding: 10% 5% 5% 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .headlineContainer h1 {
+    max-width: 360px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainHL {
+    min-width: 0px;
+    margin: 0 auto;
+  }
+
+  input[type=checkbox] {
+    width: 200px;
+    height: 200px;
+  }
+
+  .mobileBurger {
+    position: absolute;
+  }
+
+  .hiddenLogo {
+    padding-right: 300px;
+  }
+
+  .highlight {
+    font-size: 1.5rem;
+  }
+
+  .skillsBring {
+    font-size: 1.25rem;
+  }
+
+  .skillContainer h3 {
+    font-size: 0.75rem;
+  }
+
   .hiddenLogo {
     display: block;
     color: #ccd6f6;
@@ -1444,5 +1509,89 @@ nav ul {
     height: auto;
     margin: 5px;
     padding: 5px;
+  }
+}
+@media (max-width: 360px) {
+  .headlineContainer {
+    max-width: 360px;
+    min-height: auto;
+    margin: 0 auto;
+  }
+
+  .headlineContainer h1 {
+    max-width: 360px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainHL {
+    min-width: 0px;
+    margin: 0 auto;
+  }
+
+  input[type=checkbox] {
+    width: 200px;
+    height: 200px;
+  }
+
+  .mobileBurger {
+    position: absolute;
+  }
+
+  .hiddenLogo {
+    padding-right: 110px;
+  }
+
+  .contactNavInfo {
+    background-color: white;
+  }
+
+  .aboutMeHL {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .highlight {
+    font-size: 1.5rem;
+  }
+
+  .skillsBring {
+    padding-bottom: 5%;
+  }
+
+  .skillsSec {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .skillsSec h2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .getToKnow {
+    padding-bottom: 5%;
+  }
+
+  .aboutMeHL h2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .skillContainer li i {
+    font-size: 1rem;
+  }
+
+  .skill h3 {
+    font-size: 1rem;
+  }
+
+  .skillContainer h3, .skillContainer p {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 1350px) {
+  .navBar {
+    padding: 5%;
   }
 }

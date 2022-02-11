@@ -54,20 +54,6 @@
     padding: 5px;
 }
 
-.contactNavInfo{
-    text-decoration: none;
-    color: #ccd6f6;
-    padding: 0;
-    margin: 0;
-    display: block;
-    border: 1px solid transparent;
-    border-radius: 20px;
-}
-
-.contactNavInfo:hover{
-    color: white;
-    border: 1px solid white;
-}
 
 .flexBurger{
     display: flex;
@@ -89,4 +75,26 @@ nav ul {
         position: absolute;
         width: 100%;
     }
+
+
+    .contactNavInfo p{
+        color: #233554;
+        
+    }
+
+    .contactNavInfo{
+    text-decoration: none;
+    opacity: .9;
+    color: #ccd6f6;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border: 1px solid transparent;
+
+}
+
+.contactNavInfo:hover{
+    color: rgb(196, 49, 49);
+    border: 1px solid white;
+}
 
