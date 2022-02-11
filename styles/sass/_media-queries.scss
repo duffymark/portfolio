@@ -69,6 +69,62 @@
 
 
 @media (max-width: 750px) {
+
+    .contactNavInfo{
+    background-color: #ccd6f6;
+    opacity: .9;
+    
+    }
+
+
+    .hiddenLinks p{
+        color:black;
+    }
+
+    .contactNavInfo p:hover{
+        color: rgb(196, 49, 49);
+    }
+
+
+    .headlineContainer {
+    max-width: 719px;
+    min-height: auto;
+    margin: 0 auto;
+    padding: 10% 5% 5% 5%;
+    display: flex;
+    justify-content: center;
+    }
+
+    .headlineContainer h1{
+        max-width: 360px;
+        padding: 0;
+        margin: 0;
+    }
+    .mainHL{
+        min-width: 0px;
+        margin: 0 auto;
+    }
+    input[type="checkbox"]{
+    width: 200px;
+    height: 200px;
+}
+.mobileBurger{
+    position: absolute;
+}
+.hiddenLogo{
+    padding-right: 300px;
+}
+.highlight{
+    font-size: 1.5rem;
+}
+.skillsBring{
+    font-size: 1.25rem;
+}
+
+.skillContainer h3{
+    font-size: .75rem;
+}
+
     .hiddenLogo{
         display: block;
         color: #ccd6f6;
@@ -200,5 +256,84 @@
     margin: 5px;
     padding: 5px;
     }
+
+}
+
+@media (max-width: 360px) {
+    .headlineContainer{
+        max-width:360px;
+        min-height: auto;
+        margin: 0 auto;
+    }
+    .headlineContainer h1{
+        max-width: 360px;
+        padding: 0;
+        margin: 0;
+    }
+    .mainHL{
+        min-width: 0px;
+        margin: 0 auto;
+    }
+    input[type="checkbox"]{
+    width: 200px;
+    height: 200px;
+}
+.mobileBurger{
+    position: absolute;
+}
+.hiddenLogo{
+      padding-right: 110px;
+}
+.contactNavInfo{
+    background-color: white;
+}
+.aboutMeHL{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.highlight{
+    font-size: 1.5rem;
+}
+
+.skillsBring{
+    padding-bottom: 5%;
+}
+
+.skillsSec{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.skillsSec h2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.getToKnow{
+    padding-bottom: 5%;
+}
+.aboutMeHL h2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.skillContainer li i{
+    font-size: 1rem;
+}
+
+.skill h3{
+    font-size: 1rem;
+}
+.skillContainer h3, .skillContainer p {
+    font-size: .75rem;
+}
+
+}
+
+@media (max-width: 1350px) {
+    .navBar{
+        padding: 5%;
+    }
+
 
 }
