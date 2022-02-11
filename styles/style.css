@@ -290,8 +290,6 @@ header {
 .mainHL {
   font-size: 3rem;
   color: #ccd6f6;
-  min-height: 156px;
-  min-width: 730px;
 }
 
 .headlineContainer button {
@@ -303,8 +301,6 @@ header {
 .headlineContainer {
   margin-left: 1%;
   margin-right: 1%;
-  min-width: 730px;
-  min-height: 277px;
 }
 
 .myImage {
@@ -1203,7 +1199,7 @@ nav ul {
 }
 
 .contactNavInfo p {
-  color: #233554;
+  color: #ccd6f6;
 }
 
 .contactNavInfo {
@@ -1269,6 +1265,10 @@ nav ul {
   }
 }
 @media (max-width: 845px) {
+  .carouselContainer .imageContainer img {
+    width: 500px;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -1298,6 +1298,11 @@ nav ul {
   .checkOutWork {
     padding-bottom: 5%;
     padding-top: 5%;
+  }
+}
+@media (max-width: 600px) {
+  .carouselContainer .imageContainer img {
+    width: 400px;
   }
 }
 @media (max-width: 750px) {

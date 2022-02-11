@@ -41,6 +41,11 @@
 }
 
 @media (max-width: 845px) {
+
+    .carouselContainer .imageContainer img {
+    width: 500px;
+    
+}
     h1{
     font-size: 2rem
     };
@@ -64,6 +69,12 @@
     .checkOutWork {
     padding-bottom: 5%;
     padding-top: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .carouselContainer .imageContainer img {
+    width: 400px;
     }
 }
 
