@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Duffy Web-Dev</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <script src="https://kit.fontawesome.com/35e5501a65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id='header'>
+        <div class='wrapper'>
+            <!-- BURGER MENU -->
+            <nav class='mobileBurger'>
+                <div class="flexBurger">
+                    <div class="hiddenLogo">
+                        <h2>Mark Duffy</h2>
+                    </div>
+                    <div class="burger">
+                        <button id="buttonMenu" class="buttonTransparent" onClick="displayMenu()"
+                            aria-label="Click to open burger menu">
+                            <i class="fas fa-bars" id="hiddenMenu"></i>
+                        </button>
+                    </div>
+    
+                </div>
+    
+                <div class="mobileMenu">
+                    <ul id="#buttonMenu" class="menuPosition contactMenuPos">
+                        <li><a class="hiddenLinks" href='#aboutMe'>
+                                <p>About</p>
+                            </a></li>
+    
+                        <li><a class="hiddenLinks" href='#skills'>
+                                <p>Skills</p>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a class="hiddenLinks" href='#work'>
+                                <p>Projects</p>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a class="hiddenLinks" href='#contact'>
+                                <p>Contact</p>
+                            </a>
+                        </li>
+    
+                        <li><a href='./styles/assets/Mark Duffy Final Resume.pdf' class="hiddenLinks"
+                                alt='Download a copy of my resume' target='blank'>
+                                <p>Resume</p>
+                            </a></li>
+    
+                    </ul>
+                </div>
+            </nav> <!-- end of MOBILE NAV -->
+    
+            <!-- Regular NavBar -->
+    
+            <nav class="navBar">
+                <a class="logoName">Mark Duffy</a>
+                <div class="rightLinks">
+                    <a class="contactNavInfo" href='#aboutMe'>
+                        <p>About</p>
+                    </a>
+                    <a class="contactNavInfo" href='#skills'>
+                        <p>Skills</p>
+                    </a>
+                    <a class="contactNavInfo" href='#work'>
+                        <p>Projects</p>
+                    </a>
+    
+                    <a class="contactNavInfo" href='#contact'>
+                        <p>Contact</p>
+                    </a>
+    
+                    <a href='./styles/assets/Mark Duffy Final Resume.pdf' class="contactNavInfo"
+                        alt='Download a copy of my resume' target='blank'>
+                        Resume</a>
+                </div>
+            </nav> <!-- end of REG NAVBAR -->
+    
+            <!-- HERO SECTION -->
+    
+            <div class="titleImg">
+                <div class='center'>
+                    <!-- <h1>Hi, I'm a<span class='mainHL'>Front-End Developer</span></h1> -->
+    
+                    <!-- TEST -->
+    
+                    <div class="headlineContainer">
+    
+    
+                        <h1>Hi, I'm a
+                            <button id="btn_next" type="button" name='button' onclick="nextHeadline()">
+                                <span class='mainHL' id="txt" class="txt1" data-chapter="0">Front-End Developer</span>
+                        </h1>
+                        </button>
+                    </div>
+    
+                    <button aria-label="Click to see projects section" class='projectsBtn'><a href="#work">View My
+                            Projects</a></button>
+                </div>
+    
+                <div class='center mobileCenter'>
+                    <input aria-label="An image and drawing of myself " class='imgHidden selfImage' type="checkbox" />
+                </div>
+    
+                <!-- <div class='scrollDown'>
+                    <a href='#aboutMe' aria-label="Click to scroll down"><i class="downArrow fas fa-chevron-down"></i></a>
+                </div> -->
+    
+            </div>
+            <!-- <div class='scrollDown'>
+                <a href='#aboutMe' aria-label="Click to scroll down"><i class="downArrow fas fa-chevron-down"></i></a>
+            </div> -->
+        </div> <!--  end of WRAPPER -->
+    </header> <!--  end of HEADER -->
+
+    <main>
+        <h1></h1>
+
+
+    </main>
+
+
+    
+</body>
+</html>
